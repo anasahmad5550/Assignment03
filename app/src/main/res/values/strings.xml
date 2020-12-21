@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Assignment03</string>
+    <string name="open">Openning</string>
+    <string name="close">Closing</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Anas Ahmad</string>
+    <string name="nav_header_subtitle">bitf17a555@pucit.edu.pk</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="gallery">Gallery</string>
+    <string name="slideshow">Slideshow</string>
+    <string name="tools">Tools</string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+    <string name="hello">Hello world!</string>
+</resources>

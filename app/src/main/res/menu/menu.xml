@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <item android:title="Calculator">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_calculator"
+                    android:icon="@drawable/caculator"
+                    android:title="Calculator" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Quiz">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/Nav_quiz"
+                    android:icon="@drawable/quiz"
+                    android:title="Quiz" />
+
+            </group>
+        </menu>
+    </item>
+
+
+
+</menu>
