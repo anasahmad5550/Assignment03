@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -13,7 +14,7 @@ import android.widget.Toast;
 
 public class Questions extends AppCompatActivity
 {
-    TextView tv;
+    TextView tv,tv1;
     Button submitbutton, quitbutton;
     RadioGroup radio_g;
     RadioButton rb1,rb2,rb3,rb4;
@@ -59,6 +60,7 @@ public class Questions extends AppCompatActivity
         submitbutton=(Button)findViewById(R.id.button3);
         quitbutton=(Button)findViewById(R.id.buttonquit);
         tv=(TextView) findViewById(R.id.tvque);
+        tv1=(TextView) findViewById(R.id.textView2);
 
         radio_g=(RadioGroup)findViewById(R.id.answersgrp);
         rb1=(RadioButton)findViewById(R.id.radioButton);
@@ -70,6 +72,24 @@ public class Questions extends AppCompatActivity
         rb2.setText(opt[1]);
         rb3.setText(opt[2]);
         rb4.setText(opt[3]);
+
+        new CountDownTimer(10*1000,1000)
+        {
+            @Override
+            public void onTick(long l) {
+                tv1.setText(String.valueOf(l/1000));
+            }
+
+            @Override
+            public void onFinish() {
+
+                        Intent intent=new Intent(getApplicationContext(),Answer.class);
+                        startActivity(intent);
+                    }
+
+
+
+        }.start();
         submitbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
